@@ -1,0 +1,540 @@
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Group 52</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <!--link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet"-->
+
+    <!-- Custom styles for this template -->
+    <!--link href="css/creative.min.css" rel="stylesheet"-->
+    <link href="../../css/creative.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  <style>
+
+    .scrollspy-example {
+  position: relative;
+  height: 700px;
+  overflow: scroll;
+}
+
+/*code {
+  background-color: #FFC993;
+  display: block;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+  </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <!-- The navbar expands the collapsed menu above the large (lg) breakpoint, in all other
+    cases the menu will be -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+    <!--nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="mainNavbar"-->
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Group 52</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button"
+        data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./../problem_catagories/pamel.html">Problem Classes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <!-- a class="nav-link js-scroll-trigger" href="#">Models</a-->
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Models
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="nav-link dropdown-item" href="./../mapreduce/giovanni_2.html">MapReduce</a>
+              <a class="nav-link dropdown-item" href="./../tensorflow/rajat.html">TensorFlow</a>
+              <a class="nav-link dropdown-item" href="./rasika.html">Spark</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex personal-section-header">
+      <div class="container my-auto"> <!-- my-auto"-->
+        <div class="row">
+          <div class="col">
+            <h1 class="text-uppercase personal-section-title">
+              <strong>Apache Spark</strong>
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text-faded personal-section-author">Researched By: Rasika Navarange</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="personal-section-body">
+
+    <div class="container-fluid">
+    <div class="row">
+    <nav class="col-md-3 d-none d-md-block navbar navbar-expand-lg navbar-light" id="sideMenu" style="background-color: transparent">
+      <ul class="nav nav-pills flex-column" style="">
+        <li class="nav-item">
+          <a class="nav-link" href="#section1">Introduction</a>
+          <hr class="sideMenuDivider">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Resilient Distributed Datasets</a>
+          <a class="nav-link subsection" href="#subsection1"
+            style="padding-top:0;margin-left:10px;font-size:11px;">RDD Operations</a>
+            <a class="nav-link subsection" href="#subsection2"
+              style="padding-top:0;margin-left:10px;font-size:11px;">Fault Tolerance</a>
+          <hr class="sideMenuDivider">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section4">Directed Acyclic Graphs</a>
+          <hr class="sideMenuDivider">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">How Spark works on Clusters</a>
+          <hr class="sideMenuDivider">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section5">Advantages of Spark</a>
+          <hr class="sideMenuDivider">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section6">Spark Libraries</a>
+          <a class="nav-link subsection" href="#subsection3"
+            style="padding-top:0;margin-left:10px;font-size:11px;">MLlib</a>
+            <a class="nav-link subsection" href="#subsection4"
+              style="padding-top:0;margin-left:10px;font-size:11px;">GraphX</a>
+              <a class="nav-link subsection" href="#subsection5"
+                style="padding-top:0;margin-left:10px;font-size:11px;">Spark SQL</a>
+                <a class="nav-link subsection" href="#subsection6"
+                  style="padding-top:0;margin-left:10px;font-size:11px;">Spark Streaming</a>
+          <hr class="sideMenuDivider">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section7">Spark's Drawbacks</a>
+          <!--<hr class="sideMenuDivider">-->
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="#section8">References</a>
+        </li>-->
+      </ul>
+    </nav>
+    <div class="col-md-9 col-sm-12 scrollspy-example" data-spy="scroll" data-target="#sideMenu">
+      <div id="section1" class="">
+        <article>
+        <h1>Introduction</h1>
+        <hr>
+        <p> Apache Spark is an open source framework for cluster computing in the cloud. It was first developed by Matei Zaharia in 2009
+          at the UC Berkeley AMPLab; it was later donated to the Apache Software Foundation in 2013. Spark has many diverse applications such as
+          machine learning and streaming.</p>
+
+          <p>Spark was created in response to some of the deficiencies identified in older compuational models, namely MapReduce.
+            MapReduce is inefficient with <b>iterative computations</b> that work on the same dataset repeatedly, as it
+            must read data from the disk with every iteration, which takes too long. MapReduce does not support <b>interactive
+            applications</b> such as data analysis (e.g. making ad-hoc queries to the dataset) because with MapReduce, queries
+            can take too long to process since the data must be read from stable storage.<sup><a href="#fn1" id="ref1">1</a></sup>
+            This inefficient data sharing results in very slow execution times for these particular applications that require
+            us to access data quickly and repeatedly.</p>
+          <p>
+          Spark computes iterative algorithms and supports interactive applications better than MapReduce as it adds a data structure
+          known as a resilient distributed dataset (RDD: see next section) to the programming languages for which it has APIs (Java, Python, Scala and
+          more recently, R). The RDD allows intermediate results to be held in-memory so data can be accessed much faster. This improves
+          the performance of computations greatly when we need to work on the same dataset many times (as in the above cases). The RDD
+          has several partitions which can be processed in parallel: this allows Spark to execute tasks in parallel by istributing them over the cluster.
+          According to the <a href="https://spark.apache.org">Apache Spark Website</a>, Spark can perform some operations anywhere from 10x to 100x
+          faster than Hadoop MapReduce.</p>
+          <br><br>
+        </article>
+      </div>
+
+      <div id="section3" class="">
+        <article>
+        <h1>Resilient Distributed Datasets</h1>
+        <hr>
+        <p>Resilient Distributed Datasets(RDDs) are “a distributed memory abstraction that lets programmers perform in-memory
+          computations on large clusters”<sup><a href="#fn3" id="ref3">3</a></sup>, used in Spark (Zaharia et al, 2012). RDDs partition the
+          data across several nodes and are immutable which allows data to be accessed by multiple threads at once, safely, as the
+          data is not changed.</p>
+        <h4 class="subtitle" id="subsection1">RDD Operations</h4>
+
+        <p>RDDs can only be formed from data that is already on the disk, or by transforming other RDDs. In Spark,
+          transformation operations are performed lazily: the new dataset, formed by transforming an existing one, is only
+          computed when it is required to. Only action operations can force RDDs to be computed in order to obtain some result.
+         To illustrate this, let us look at the following example from the
+          <a href="https://spark.apache.org/docs/latest/rdd-programming-guide.html#basics">Spark Programming Guide</a> which
+          calculates the total length of a text file using the map and reduce operations:</p>
+
+          <code style="width:40em"> <font color="black"> <b> JavaRDD<String> lines = sc.textFile("data.txt");<br>
+                 JavaRDD<Integer> lineLengths = lines.map(s -> s.length());<br>
+                 int totalLength = lineLengths.reduce((a, b) -> a + b);</b></font></code>
+
+        <p>
+          <br>
+        Line 1 first creates an RDD named <font face="courier">lines</font>. Line 2 uses the transformation operation <font face="courier">map</font> which changes the value of
+        each line in <font face="courier">lines</font> to its length. Finally, the action operation <font face="courier">reduce</font>
+        sums all the lengths in <font face="courier">lineLengths</font> in
+        order to give the total length. Since the evaluation of transformations in Spark is lazy, the new RDD <font face="courier">lineLengths</font>
+        is not actually evaluated until it is forced to, by the action operation <font face="courier">reduce</font>, at the very end.</p>
+
+        <p>Some further transformation operations include the following: <font face="courier">filter</font> which transforms an RDD by retaining elements
+          for which some condition is true; <font face="courier">flatMap</font> which maps a given function to every element of the RDD and then "flattens"
+          them by separating out the partitions from the RDD and making them separate elements and <font face="courier">groupBy</font>, which combines
+          elements based on a certain property to form a new RDD.</p>
+        <p>Some further action operations include the following: <font face="courier">collect</font>, which returns all the elements of an RDD as a list
+          to the driver; <font face="courier">max</font>, which just returns the maximum element of an RDD to the driver and <font face="courier">count</font>, which returns the number
+          of elements. For more examples, refer to this <a href="https://training.databricks.com/visualapi.pdf">databricks guide</a>.</p>
+
+        <h4 class="subtitle" id="subsection2">Fault Tolerance in Spark</h4>
+        <p><a href="#a-class">Fault tolerance</a> is the ability of the system to continue functioning even when some of the nodes have failed
+          <sup><a href="#fn4" id="ref4">4</a></sup>
+          (Tanenbaum, van Steen, 2002). Fault tolerance is achieved by finding means of recovering lost data in the event
+          of a failure due to some fault.</p>
+        <p>RDDs have “resilient” in the name because they are fault tolerant. RDDs become fault tolerant by storing
+          their lineage, allowing recovery of lost data: the “lineage” describes the way in which the dataset was derived
+          from other RDDs. Therefore, lost nodes can be rebuilt using data from the disk by tracing the dependencies on
+          other RDDs<sup><a href="#fn3" id="ref3">3</a></sup>. For example, the lineage of <font face="courier">lineLengths</font>
+          for the code example above is merely <font face="courier">lines</font> --> <font face="courier">lineLengths</font>.
+          Lineages can be represented in the form of a Directed Acyclic
+          Graph (see next section).</p>
+        <p>Immutability makes the tracing of lineage simpler as you are not able to change an RDD while tracking a lineage
+          to rebuild a node. Nodes with large lineages can take a long time to reproduce as following the chain of dependencies
+          can be costly: to fix this, Spark has an API to allow users to “checkpoint” certain pieces of data. Checkpointing
+          in a fault-tolerant distributed system is the saving of data to stable storage at regular intervals to enable the
+          recovery of lost data in the event of a failure<sup><a href="#fn5" id="ref5">5</a></sup> (Coulouris, Dollimore &
+          Kindberg, 2005): this reduces the size of the path of lineages that must be traced in order to recover the failed node.</p>
+          <br><br>
+        </article>
+      </div>
+
+      <div id="section4" class="">
+            <article>
+            <h1>Directed Acyclic Graphs</h1>
+            <hr>
+            <p> Spark has “an advanced DAG execution engine that supports acyclic data flow"(<a href="https://spark.apache.org">Apache
+            Spark Website</a>). A Directed Acyclic Graph is a set of nodes joined with arcs; these arcs have a specified direction from
+            one node to the next and the graph does not contain any cycles.</p>
+            <p>When Spark is given a job, it generates a DAG of RDD dependencies in order to execute a program in several “stages”. In Spark,
+              the nodes of the DAG are the RDDs and the arcs represent a tranformation.  The DAG is passed to the
+              <a href="https://spark.apache.org/docs/1.2.1/api/java/org/apache/spark/scheduler/DAGScheduler.html">DAG Scheduler</a> which in turn
+              generates a DAG of "stages" to be executed. Each stage combines as many transformations which can be computed together at once as possible.
+              This is to increase efficiency of execution of the job. Below is a diagram of an example of a DAG for a Spark program from
+              Matei Zaharia's paper "Resilient Distributed Datasets: A Fault Tolerant Abstraction for In-Memory Cluster Computing"
+              <sup><a href="#fn3" id="ref3">3</a></sup>:</p>
+                <figure>
+                  <img src="images/DAG.jpg" alt="DAG Diagram" style="width:500px;height:300px;">
+                  <figcaption>Fig 1. Diagram of DAG stages for the transformations map, union, groupBy and join. Notice that
+                    Stage 2 is grouped as a single stage because the Scheduler tries to put as many transformations together
+                    as possible (this is called pipelining). This is possible in the case of Stage 2 because each partition
+                    in directed only towards one other partition in another RDD: this property is known as having a <b>narrow
+                    dependency</b> as opposed to a <b>wide dependency</b>, like the groupBy operation where a partition is
+                    dependent on many other RDDs.</figcaption>
+                </figure>
+            <p> <br> The DAG also helps RDDs’ fault tolerance as a representation of the lineages of the nodes. Notice
+                that the tracing of transformations of intermediate datasets when executing a job is the same as the tracing
+                of dependencies of the RDD so <b>the DAG diagram above is the lineage graph for the RDD G</b>. It is with the computed DAG that
+                the DAG Scheduler is also able to manage and recover any failures.</p>
+              <br><br>
+            </article>
+          </div>
+
+          <div id="section2" class="">
+          <article>
+            <h1>How Spark runs on Clusters</h1>
+            <hr>
+            <p>A <a href="./../../index.html#a-class">cluster</a> is defined as "a collection of interconnected stand-alone computers working together as a single,
+              integrated computing resource”<sup><a href="#fn2" id="ref2">2</a></sup> (Buyya, 1999). A computer within the cluster is referred to as a node; nodes
+              in the cluster are generally interconnected via an LAN (local area network). The nodes in the cluster are able
+              to work individually or together, with all the other nodes in the cluster, providing support for parallel
+              applications.</p>
+            <p>In order to be able to run a program on a cluster, we must create a <a href="https://spark.apache.org/docs/2.0.2/api/java/org/apache/spark/SparkContext.html">SparkContext</a> object
+              in our driver program.
+              The SparkContext in the driver program allows us to use the cluster. SparkContext uses a cluster manager to create executors in worker nodes in the cluster;
+              a cluster manager is software that runs on a set of cluster nodes and sends jobs to each node in the cluster and obtains the results. SparkContext is able to work with
+              its own cluster manager, <a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html">Hadoop YARN</a>, or
+              <a href="http://mesos.apache.org/">Mesos</a>.
+              Once SparkContext has passed on a task to them, the executors run the application given. The following diagram illustrates the architecture of this model.
+
+              <figure>
+                <img src="images/cluster-overview.png" alt="cluster architecture" style="width:500px;height:300px;">
+                <figcaption>Fig 2. This diagram from the <a href="">Spark docs</a> illustrates how the SparkContext object uses the cluster manager to provide the computing resources from the cluster
+                  so that the tasks allocated by SparkContext can be executed. The image is taken from the <a href="https://spark.apache.org/docs/latest/cluster-overview.html">
+                  Spark Programming Guide</a>.</figcaption>
+              </figure>
+
+              <p>Refer to the following code example which demonstrates how we create a SparkContext in Java, providing some further explanation of how it gives us access to the cluster. </p>
+
+              <script src="https://gist.github.com/rasnav99/ceb80fb4c256648416810e013891952a.js"></script>
+
+            <!--figure>
+              <img src="images/Cluster.jpg" alt="cluster" style="width:500px;height:300px;">
+              <figcaption>Fig.1 Cluster Computing Architecture diagram from
+                “High Performance Cluster Commputing” <sup><a href="#fn2" id="ref2">2</a></sup> (Buyya, 1999)</figcaption>
+            </figure-->
+
+          </div>
+          <br><br>
+          </article>
+
+      <div id="section5" class="">
+        <article>
+        <h1>Advantages of Spark</h1>
+        <hr>
+        <ol class="personal-page-list">
+          <li class="">
+            <span>1.</span>
+            <p>
+              Spark can “run programs up to 100x faster than Hadoop MapReduce in memory, or 10x faster on disk”.
+              (<a href="https://spark.apache.org">Apache Spark Website</a>)
+            </p>
+          </li>
+          <li>
+            <span>2.</span>
+        <p>Spark is easy to use as it has APIs for commonly used programming languages such as Scala (the language in which
+           Spark is implemented), Python, Java and R. In addition, the Spark shell makes interactive data analysis simpler as
+           ad-hoc queries to the dataset can be made more easily. Spark is also easily integrated with distributed storage systems
+           such as HDFS and Cassandra and others. This makes it easier for businesses to integrate Spark with their existing infrastructure.</p></li>
+           <li>
+             <span>3.</span>
+        <p>As mentioned before, iterative algorithms that work on the same data set, multiple times do
+          not perform well with Hadoop MapReduce. This is because each iteration must read/write to HDFS which necessitates
+          several intermediate processes such as serialisation or compression<sup><a href="#fn6" id="ref6">6</a></sup>
+          (Malak, East, 2016). Hence, Spark is superior for this class of computations due to its RDD data abstraction which
+          allows in-memory computations so that the dataset can be re-accessed more quickly. Below is an example of an interative
+          implementation of the PageRank algorithm in Spark Java.</p></li>
+
+          <li>
+            <span>4.</span>
+        <p>Furthermore, Spark users can use the <font face="courier">persist</font> or <font face="courier">cache</font> methods to cache RDDs in memory so that they can be
+          more easily accessed in the future. This is useful for interactive data mining as querying the dataset becomes
+          much faster due to the faster memory access than reading from the disk. For example, if we want the RDD F from
+          the DAG diagram above to stay in memory, we make the following method call. Refer to the code below for an
+          example of the <font face="courier">cache</font> method.</p>
+
+          <code style="width:30em"><font color="black"><b> F.persist(StorageLevel.MEMORY_ONLY()); </b></font></code></li>
+
+          <li>
+            <span>5.</span>
+        <p>Spark has libraries for machine learning, SQL, graphs and streaming (see next section).</p></li>
+</ol>
+
+        <script src="https://gist.github.com/rasnav99/c8cc5dedc84603e12b6f670288d51f6f.js"></script>
+
+          <br><br>
+        </article>
+      </div>
+      <div id="section6" class="">
+        <article>
+        <h1>Spark Libraries</h1>
+        <hr>
+        <p>Spark has 4 main libraries in its ecosystem: MLlib, GraphX, Spark SQL and Spark Streaming. All of these libraries
+          can be used in the same application and are integrated easily. This allows users to create a wider variety of applications
+          without having to use any tools other than Spark. For example, users could apply machine learning algorithms from MLlib to
+          live event streams, using Spark Streaming.</p>
+
+          <figure>
+            <img src="images/spark-stack.png" alt="Spark Ecosystem" style="width:400px;height:200px;">
+            <figcaption>Fig 3. Diagram of Spark Ecosystem from <a href="https://spark.apache.org/">Apache Spark Website</a></figcaption>
+          </figure>
+
+      </article>
+      <article>
+        <h4 class="subtitle" id="subsection3">MLlib</h4>
+        <p><a href="https://spark.apache.org/mllib/">MLlib</a> is Spark’s machine learning library which comes with many
+          useful algorithms such as logistic regression, generalised linear regression, Alternating Least Squares (ALS) and
+          many more.  There are also further utilities such as summary statistics and hypothesis testing. This convenience
+          allows novice users to use these algorithms straight away and focus on the data analysis, while professionals can
+          modify and refine the algorithms as they please.<sup><a href="#fn7" id="ref7">7</a></sup></p>
+        <p>Toyota uses Spark MLlib to improve social media engagement and gain insights on customers through public social
+          media mentions of Toyota in order to enhance their marketing strategies. MLlib helps Toyota to “categorise and
+          prioritise incoming social media interactions in real-time” by separating noise from customer feedback and opinions
+          which can be used to improve their product.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nEGSWp5LoQE" frameborder="0" allow="autoplay;
+        encrypted-media" allowfullscreen></iframe>
+      </article>
+      <article>
+        <br>
+        <h4 class="subtitle" id="subsection4">GraphX</h4>
+        <p><a href="https://spark.apache.org/graphx/">GraphX</a> is Spark’s graphing library in which a graph is represented by two RDDs, one for arcs and the other for
+          nodes.  GraphX has the property that the data structure does not have to be only processed as a graph, whereby a
+          graph must be traversed to access a node, but can also be treated as separate datasets consisting of nodes and arcs.
+          Hence, manipulating the data becomes the simple task of applying transformation operations to the nodes RDD which is
+          what Spark was designed for.</p>
+        <p>Alibaba uses GraphX to process and analyse the data that they collect from buyers and sellers. These buyers and
+          sellers can be represented as nodes on a graph and the connections between them, the arcs. GraphX is used as a way
+          to analyse this data quickly with the use of the standard algorithms already in the library and with more refined
+          algorithms.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7_jm_tDD_SI"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </article>
+      <article>
+        <br>
+        <h4 class="subtitle" id="subsection5">Spark SQL</h4>
+        <p><a href="https://spark.apache.org/sql/">Spark SQL</a> is a library which can be used to run SQL queries on the data or even to read data from Apache Hive.
+          Spark SQL extracts more data about the data in the RDD and the transformations and actions performed: this information
+          is used to optimise queries to the dataset for faster interactive data analysis. Queries can be executed from the
+          shell which is a further benefit for interactive analysis.</p>
+        <p>Yahoo uses Spark SQL to interatively query their data about visits from online advertisments</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/h8u_ZgjzHiQ"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </article>
+        <article>
+          <br>
+        <h4 class="subtitle" id="subsection6">Spark Streaming</h4>
+        <p>“Spark Streaming makes it easy to build scalable fault-tolerant streaming applications.” </p>
+        <p><a href="https://spark.apache.org/streaming/">Spark Streaming</a> enables Spark to process live data streams by splitting them into batches which Spark was designed
+          to operate on. DStreams are used as the representation for live continuous data streams.</p>
+        <p>Netflix utilises Apache Spark Streaming to give “near real-time” recommendations to their users based on the live
+          data streams from users watching Netflix every day. Before Spark, the usual means of using user data to provide
+          recommendations would be via batch processing. However, this does not allow Netflix to respond instantly to what
+          is popular and what users are watching in real-time. Spark Streaming allows Netflix to process all the live data
+          they are continuously collecting as it splits the data into batches which can be processed instantly.</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/vQgp71cwweg" frameborder="0" allow="autoplay;
+          encrypted-media" allowfullscreen></iframe>
+        </article>
+          <br><br>
+      </div>
+      <div id="section7" class="">
+        <article>
+        <h1>Spark's Drawbacks</h1>
+        <hr>
+        <p>According to Zaharia's paper<sup><a href="#fn3" id="ref3">3</a></sup>, Spark RDDs are “less suitable for applications
+          that make asynchronous finegrained updates to shared state, such as a storage system for a web application or an incremental
+          web crawler”. This is because Spark is designed for batch-processing of data, applying the same operation on the entire dataset.</p>
+        <p>When processing big data in memory, Spark requires a lot of RAM which can become very expensive. This makes Spark more
+           expensive to run than Hadoop MapReduce which performs more computations on stable storage which is much cheaper.</p>
+        <p>Furthermore, due to Spark's use of a lot of RAM, users of Spark tend to face many issues surrounding the consumption of memory and
+          the allocation of memory is considered difficult to manage in Spark.
+        <p>Spark does not have its own file mangement sytem so it is most frequently used with HDFS (Hadoop Distributed File System). This
+          causes us to run into the <a href="">Small Files Problem</a> as HDFS cannot efficiently cope with a large numbe of very small files
+          as it was designed to work with a smaller number of large files.
+           <br><br>
+         </article>
+       </div>
+       <div class="refs">
+      <hr>
+         <p id="fn1">1. Zaharia, M., Chowdhury, M., Franklin, M. J., Shenker, S. and Stoica, I. (2010)
+           <a href="https://www.usenix.org/event/hotcloud10/tech/full_papers/Zaharia.pdf">Spark:
+           Cluster computing with working sets.</a> <i> 2nd USENIX Conference on Hot Topics in Cloud
+           Computing (HotCloud’10)</i>, Berkeley, USENIX Association.<a href="#ref1" title="Jump back to footnote 1
+           in the text.">↩</a></p>
+        <p id="fn2"><br>2. Buyya, R. (1999) <i>High Performance Cluster Computing.</i> Upper Saddle River, New Jersey,
+          Prentice Hall.<a href="#ref2" title="Jump back to footnote 2 in the text.">↩</a></p>
+        <p id="fn3"><br>3. Zaharia M, Chowdhury M, Das T, Dave A, Ma J, McCauly M, Franklin MJ, Shenker S, Stoica I.
+          (2012) <a href="https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final138.pdf">Resilient
+            Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing.</a>
+          <i> 9th USENIX Symposium on Networked Systems Design and Implementation</i>, Berkeley,
+          USENIX Association.<a href="#ref3" title="Jump back to footnote 3 in the text.">↩</a></p>
+        <p id="fn4"><br>4. Tanenbaum A. S., Van Steen M. (2002) <i>Distributed Systems: Principles and Paradigms.</i>
+          London, Pearson.<a href="#ref4" title="Jump back to footnote 4 in the text.">↩</a></p>
+        <p id="fn5"><br>5. Coulouris G., Dollimore J., Kindberg T. (2005) <i>Distributed Systems: Concepts and Design.</i>
+          Boston, Addison Wesley.<a href="#ref5" title="Jump back to footnote 5 in the text.">↩</a></p>
+        <p id="fn6"><br>6. Malak M. S., East R. (2016) <i>Spark GraphX in Action</i> New York, Manning Publications
+          Company.<a href="#ref6" title="Jump back to footnote 6 in the text.">↩</a></p>
+        <p><br>6. <a href="https://spark.apache.org/docs/latest/ml-guide.html">Machine Learning Library (MLlib) Guide</a></p>
+        <p><br>7. <a href="https://spark.apache.org/docs/latest/graphx-programming-guide.html">GraphX Programming Guide</a></p>
+        <p><br>8. <a href="https://spark.apache.org/docs/latest/sql-programming-guide.html">Spark SQL, DataFrames and Datasets Guide</a></p>
+        <p><br>9. <a href="https://spark.apache.org/docs/latest/streaming-programming-guide.html">Spark Streaming Programming Guide</a></p>
+        <p><br>10. Zaharia M. <a href="http://people.csail.mit.edu/matei/talks/2010/stanford_spark.pd"><i>Spark: In­‐Memory Cluster Computing
+          for Iterative and Interactive Applications</i></a> [Presentation], AMPLab UC Berkeley.</p>
+        <p><br>11. Zaharia M. (2017) <a href="https://web.stanford.edu/class/cs341/slides/spark_tutorial.pdf"><i>Parallel Programming with Apache
+          Spark</i></a> [Presentation], CS341, Stanford University.</p>
+        <p><br>12. Pietzuch, P (2018) <a href="https://wwwhomes.doc.ic.ac.uk/~prp/doc/teaching/1718/410H/05-sdsd-410h-spark.pdf"><i>Resilient
+          Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing</i></a> [Lecture], Imperial College London. LINK ONLY AVAILABLE TO IMPERIAL COLLEGE MEMBERS</p>
+       <p id="fn7"><br>13. Meng, X <a href="https://stanford.edu/~rezab/sparkworkshop/slides/xiangrui.pdf"><i>MLlib: Scalable Machine Learning on Spark
+       </i></a> [Lecture], Stanford University.<a href="#ref7" title="Jump back to footnote 7 in the text.">↩</a></p>
+       <p><br>14. <a href="https://www.tutorialspoint.com/apache_spark/index.htm">Apache Spark Tutorial</a></p>
+            <br><br>
+          </div>
+    </div>
+  </div>
+</div>
+</section>
+
+    <section class="" id="footer" style="background-color:#F38945; color:rgba(255, 255, 255, 0.7); box-shadow: 0px 2px 10px 5px rgba(100, 100, 100, 0.49);">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <p class="" style="color: #fff">Contributors</p>
+            <hr style="border-top: 1px solid #4B4135; border-width: 3px;">
+            <div class="footer-text">
+            	Rajat Rasal <br>
+            	Rasika Navarange <br>
+            	Giovanni Caruso <br>
+            	Pamelpreet Jhinger <br>
+            </div>
+          </div>
+          <div class="col-sm">
+            <p class="" style="color: #fff">Templates</p>
+            <hr style="border-top: 1px solid #4B4135; border-width: 3px;">
+            <div class="footer-text">
+              <a href="https://github.com/BlackrockDigital/startbootstrap-creative"
+              style="color:rgba(255, 255, 255, 0.7);">
+              <i class="fab fa-2x fa-github"></i><br>
+              startbootstrap-creative
+              </a><br>
+              altered by Rajat Rasal
+            <div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script-->
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="../../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <!-- script src="js/creative.min.js"></script-->
+    <script src="../../js/creative.js"></script>
+    <script src="../../js/personal_page_scripts.js"></script>
+
+  </body>
+
+</html>

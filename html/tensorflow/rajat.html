@@ -1,0 +1,889 @@
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Group 52</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <!--link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet"-->
+
+    <!-- Custom styles for this template -->
+    <!--link href="css/creative.min.css" rel="stylesheet"-->
+    <link href="../../css/creative.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  <style>
+
+  .scrollspy-example {
+  position: relative;
+  height: 700px;
+  overflow: scroll;
+  }
+  </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <!-- The navbar expands the collapsed menu above the large (lg) breakpoint, in all other
+    cases the menu will be -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+    <!--nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="mainNavbar"-->
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Group 52</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button"
+        data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./../problem_catagories/pamel.html">Problem Classes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <!-- a class="nav-link js-scroll-trigger" href="#">Models</a-->
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Models
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="nav-link dropdown-item" href="./../mapreduce/giovanni_2.html">MapReduce</a>
+              <a class="nav-link dropdown-item" href="./rajat.html">TensorFlow</a>
+              <a class="nav-link dropdown-item" href="./../spark/rasika.html">Spark</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex personal-section-header">
+      <div class="container my-auto"> <!-- my-auto"-->
+        <div class="row">
+          <div class="col">
+            <h1 class="text-uppercase personal-section-title">
+              <strong>TensorFlow</strong>
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text-faded personal-section-author">Researched By: Rajat Rasal</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="personal-section-body">
+
+    <div class="container-fluid">
+    <div class="row">
+    <nav class="col-md-3 d-none d-md-block navbar navbar-expand-lg navbar-light" id="sideMenu" style="background-color: transparent">
+      <ul class="nav nav-pills flex-column" style="">
+        <li class="nav-item">
+          <a class="nav-link" href="#section1">What is Tensorflow?</a>
+          <a class="nav-link subsection" href="#subsection1"
+            style="padding-top:0;margin-left:10px;font-size:11px;">Introduction</a>
+          <a class="nav-link subsection" href="#subsection2"
+            style="padding-top:0;margin-left:10px;font-size:11px;">Advantages of TF for Cloud Computing</a>
+          <hr class="sideMenuDivider">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Machine Learning</a>
+          <a class="nav-link subsection" href="#subsection3"
+            style="padding-top:0;margin-left:10px;font-size:11px;">Softmax Regression</a>
+          <a class="nav-link subsection" href="#subsection4"
+            style="padding-top:0;margin-left:10px;font-size:11px;">ML Implementation</a>
+          <a class="nav-link subsection" href="#subsection5"
+            style="padding-top:0;margin-left:10px;font-size:11px;">Convolutional Neural Networks</a-->
+          <a class="nav-link subsection" href="#subsection6"
+            style="padding-top:0;margin-left:10px;font-size:11px;">CNN Implementation</a>
+          <hr class="sideMenuDivider">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Graph Dataflow Model</a>
+          <a class="nav-link subsection" href="#subsection8"
+            style="padding-top:0;margin-left:10px;font-size:11px;">Storing Data</a>
+          <a class="nav-link subsection" href="#subsection7"
+            style="padding-top:0;margin-left:10px;font-size:11px;">Graph Model</a>
+          <hr class="sideMenuDivider">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section4">Distributed Computing in Context</a>
+          <a class="nav-link subsection" href="#subsection9"
+            style="padding-top:0;margin-left:10px;font-size:11px;">Graph Model in Distribution</a>
+          <a class="nav-link subsection" href="#subsection10"
+            style="padding-top:0;margin-left:10px;font-size:11px;">Master/Worker Model</a>
+          <a class="nav-link subsection" href="#subsection11"
+            style="padding-top:0;margin-left:10px;font-size:11px;">Distributed Data Storage Structures</a>
+          <a class="nav-link subsection" href="#subsection14"
+            style="padding-top:0;margin-left:10px;font-size:11px;">Implementation</a>
+          <a class="nav-link subsection" href="#subsection12"
+            style="padding-top:0;margin-left:10px;font-size:11px;">Use Cases</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-md-9 col-sm-12 scrollspy-example" data-spy="scroll" data-target="#sideMenu">
+      <div id="section1" class="">
+        <article>
+        <h1>What is TensorFlow?</h1>
+        <hr>
+		<h4 class="subtitle" id="subsection1">Introduction</h4>
+        <p>
+        TensorFlow is an open-source framework for performing mathematical computations,
+        primarily used for its portable, scalable implementations of machine learning
+        algorithms to applications such as deep neural networks<sup><a href="#fn1" id="ref1">1</a></sup>. In this way, TensorFlow’s
+        implementation results in little effect to performance when scaling up
+        (large server clusters with GPUs) or scaling down (i.e. Android or IOS device).
+        This is further extended by the TensorFlow’s ability to conduct training and
+        execution aspects of ML algorithm efficiently in a distributed manner across
+        multiple, different computing devices.</p>
+
+        <p> Deep Learning has massively influenced the field of Computer Science, with
+        these ideas giving rise to highly functional applications with ‘smart’ abilities.
+        Google was making use of these techniques to power the algorithms behind its
+        search, mail, photos and speech recognition tools. At the time, this was being done
+        with its DistBelief<sup><a href="#fn2" id="ref2">2</a></sup>
+        framework, but as the need for machine learning grew, a more robust and efficient
+        implementation was needed. TensorFlow arose from the need to generalise different
+        machine learning implementations across Google to allow engineers to reuse the
+        basic code base for future projects. After open-sourcing TF,
+        Google released a distributed version of the framework alongside its Google Cloud
+        Machine Learning infrastructure to train and serve TF models<sup><a href="#fn3" id="ref3">3</a></sup>.</p><br>
+
+
+        <!--div align="center" class="embed-responsive embed-responsive-16by9"-->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/oZikw5k_2FM"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+          </iframe><br><br>
+        <!--/div-->
+        <h4 class="subtitle" id="subsection2">Advantages for Cloud Computing</h4>
+        <p>
+        The main advantages to using TensorFlow for any distributed, iterative calculation
+        (with the case of ML) stem from its implemented as a data flow graph. I will
+        explore these more as I go along, but will outline them here:
+        </p>
+        <p>
+        <ul>
+          <li><b>Portability</b> -
+            At its heart TensorFlow is written in C++, however there also exist the more widely
+            used <a href="https://github.com/tensorflow/tensorflow">Java, Go, Python and a slightly higher level C++ API</a>
+           built on top of the C++ core. The
+            Python API being most prominently used in research and for any high level ML
+            applications. This abstraction gives rise to the graph data flow model, by
+            hiding the complexities of how the model is deployed and executed differently
+            on different platforms. With best practices being encoded at the low level,
+            developers can focus on the larger tasks at hand. Developers need not consider
+            how the core libraries are implementing algorithms on different devices, as
+            optimisation have been made to ensure similar runtimes across platforms. In
+            this way, we can abstract away the actual implementation and visual our algorithms
+            as a graph, with this being the high level models object orientated realisation.
+            In this way, Python’s TF API, for example, will allow for the same code to be
+            run on Android devices or across a large cluster of servers running on GPUs alike.<sup><a href="#fn4" id="ref4">4</a></sup>
+          </li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/t64ortpgS-E"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br><br>
+        <ul>
+          <li><b>Flexibility</b> -
+          	TFs high level APIs provide a highly flexible set of libraries that allow complex
+          	mathematical procedure to be written with ease. The graph model can be built up as
+          	a series of discrete units, nodes, with data pipelines, vertices, between them.
+          	This allows for speedy experimentation with little hit to performance. In the case
+          	of a neural network, parts of the network can be replaced or restructured by
+          	refactoring the graph. The core will automatically refactor the platform specific
+          	low level code.
+          	<br><br>
+          	Small changes in the description of how the computation is to be performed can
+          	extend the domain over which the code runs. For example,
+          	<br><br>
+          	<code style="width:40em">
+            &ensp; parameter_server = ["localhost:2222"] # master <br>
+            &ensp; workers = ["localhost:2223", "localhost:2224", "localhost:2225"] <br>
+            &ensp; cluster = tf.train.ClusterSpec( <br>
+            &ensp; {"ps": parameter_server, "worker": workers}) <br>
+            </code>
+
+          	<br>
+          	which we will explore <a href="#subsection14">further later on</a>. If I add more IP addresses to the parameter_server
+          	or workers list, the code will be distributed across those devices too (provided
+          	a TF server is running on them). In this way, the same model for a neural
+          	network could be trained in the cloud, distributed over some large cluster and
+          	then served on another platform, if it were deployed across different networks or servers.
+          </li>
+          </ul>
+          <br>
+        </article>
+        <h3>To skip details on the applications of the TensorFlow model to machine learning
+        and go straight to the details about the implementations of TensorFlow, click
+        <a href="#section3">here.</a></h3>
+        <br>
+      </div>
+
+      <div id="section2" class="">
+      <article>
+        <h1>Machine Learning In Context</h1>
+        <hr>
+        <p>
+        It is beyond the scope of this project to go into the details of machine learning
+        algorithms, but we can however discuss the basic concepts with the help of an example.
+        We will be implementing an ML algorithm to classify handwritten digits after training
+        on the <a href="http://yann.lecun.com/exdb/mnist/">MNIST dataset</a>.
+        </p>
+        <h4 class="subtitle" id="subsection3">Supervised Learning with Softmax Regression</h4>
+        <p>
+        We will examine an example which used supervised learning. This technique involve
+        training a model on a set of example input-output pairs (training data), so as to
+        learn a function for mapping any other inputs to outputs<sup><a href="#fn5" id="ref5">5</a></sup> (Russell S, 2009).
+        From this we expect the model to establish a sensible inductive bias, a set of
+        assumptions the model can use for future mappings<sup><a href="#fn6" id="ref6">6</a></sup>.
+
+        The technique we will examine is called softmax regression, which can be used to
+        classify an observation into one of more than 2 categories<sup><a href="#fn7" id="ref7">7</a></sup> (F Herrera et al, 2016). This is a generalisation of the logistic
+        regression, which makes a binary classification (this is beyond the scope of this
+        project by can be further read about <a href="https://www.geeksforgeeks.org/understanding-logistic-regression/">here:</a>
+        <sup><a href="#fn5" id="ref5">5</a></sup>. Where the logisitic regression classifies a
+        normalised input vector using a logistic (sigmoid) function, the softmax algorithm
+        using a so-called softmax function, which generalises the sigmoid.
+        </p>
+
+        The softmax algorithm for the MNIST classification problem (WLOG) is as follows:
+
+        <ol class="personal-page-list">
+          <li class="">
+            <span>1.</span>
+            <p>
+            <br>
+            Establish k possible classes, a class for each number 0 to 9.
+            </p>
+          </li>
+
+          <li>
+            <span>2.</span>
+            <p>
+            <br>
+            We compile all the images we want to classify into a features matrix (X, dim(X) = n x m),
+            where we want to class m images (features), with n observations made about each
+            image. If we want to classify with 100 handwritten digit images which are in
+            black and white, where each image has size 28x28 pixels containing either a 1
+            or 0, then n = 100, m = 28 ^ 2 = 784 and k = 10 (from above). So each image
+            to be classified is a m-row vector.
+            </p>
+          </li>
+
+          <li>
+            <span>3.</span>
+            <p>
+            <br>
+            Weight vectors are computed for each class (each number). This will involve
+            unravelling each image for each class in the MNIST training data set, and for
+            each pixel determining a number which represents its level of “zeroness” or
+            “oneness”. i.e. how close each pixel is to being a 1 or a 0 for each number.
+            Each weight vector is put into a weight matrix (W, dim(W) = m x k). So each class (number)
+            is represented as a m-column vector. Each weight vector is initialised with
+            arbitrary images which follow a normal distribution, i.e. 1s are closer to the
+            centre of the image than 0s.
+            </p>
+          </li>
+
+          <li>
+            <span>4.</span>
+            <p>
+            <br>
+            Z = xW (dim(Z) = n x k). Each element in the k-row vectors of Z gives us a score of how close
+            it is to being one of the classes. We pick the max value as the class that it
+            belongs to e.g. if Z_30 = [1.2, 1.4, 0.4, 1.3, 1.6, 5.4, 1.1, 0.1, 1.7, 0.6]
+            means that our model predicts the 30th observation to be the number ‘5’. This example is taken
+            from <a href="https://www.geeksforgeeks.org/softmax-regression-using-tensorflow/">here</a>
+            </p>
+          </li>
+
+          <li>
+            <span>5.</span>
+            <p>
+            <br>
+            Now we use the softmax function to convert each score in Z to a probability,
+             such that the sum of all probabilities in a row is 1. This allows us to use
+             the gradient decent algorithm to learn from the classification we made in
+             step 4 and build up the weight matrix we began computing in step 3.
+            </p>
+          </li>
+
+          <li>
+            <span>6.</span>
+            <p>
+            <br>
+            Each observation vector comes with a target vector, which uses one-hot encoding.
+            This assigns a 1 to the index that contains the expected result and a 0 to all
+            the other ones which it is not. We feed the one-hot encoded matrix and <a href="http://neuralnetworksanddeeplearning.com/chap3.html">softmax
+            probability matrix into a cross-entropy function</a>. This calculates the error in
+            identifying each number (each value in S is between 0 and 1 since S consists of
+            probabilities, so a the absolute log of a number closer to 0 is larger than a
+            number closer to 1, so a more accurately predicted number will have a larger
+            cross-entropy value). We compute the cross entropy function for each row in the
+            softmax matrix, and find an average error across the whole matrix (The SVM Classifier Oxford lecture 2 notes).<sup><a href="#fn8" id="ref8">8</a></sup>
+
+            </p>
+          </li>
+
+          <li>
+            <span>7.</span>
+            <p>
+            <br>
+            Finally we use gradient of the average entropy loss function to update the
+            weight matrix (gradient descent) (For more info click <a href="http://ml-cheatsheet.readthedocs.io/en/latest/gradient_descent.html">here</a>).
+            We repeat this process for some number of iterations over the training set or
+            until the average loss function is below a threshold.
+            </p>
+          </li>
+        </ol>
+
+      <h4 class="subtitle" id="subsection4">Machine Learning Implementation</h4>
+        <p>
+          <div class="embed-responsive embed-responsive-16by9 python-notebook" align="center" >
+            <iframe class="embed-responsive-item" style="height:900px !important" src="./MNIST.html">
+            </iframe>
+          </div>
+        </p>
+      <h4 class="subtitle" id="subsection5">Convolutional Neural Networks</h4>
+        <p>
+        We will now take a qualitative look at convolutional neural networks in the hope
+        that it will provide further context to the workings of TensorFlow. I will extend
+        my code from above and use this to use a simple neural network model to deeper
+        learn the MSINT dataset.
+        </p>
+        <p>
+        (an introduction to neural networks ben rise Peter van Der smagt)
+        A neural network is an artificial computational model which is loosely modelled
+        on the functionality of neurons in brains of animals, such that patterns can be
+        recognised<sup><a href="#fn9" id="ref9">9</a></sup>.
+        We want to use neural networks for deep learning in this case, which is made possible
+        through a network with multiple layers hidden/unseen layers between the input and
+        output, each applying different functions to the data.
+        . At each layer, nodes perform
+        computations to realise the prominence of a particular characteristic in the
+        input data. A summation of the input/weight products input into a node is taken
+        and passed through the nodes’ activation function to determine probabilistically
+        how prominent a particular characteristic is. These output will then be passed
+        to the nodes of the next layer for further abstraction to be performed<sup><a href="#fn10" id="ref10">10</a></sup>.
+        </p>
+        <p>
+        If the activation function is a softmax, the returned output probabilities are
+        distributed over each of the distinct output subclasses for that layer: the outputs
+        from each node will then be between 0 and 1 and have a total sum of 1.
+        </p>
+        <p>
+        A convolution neural net differs to the conventional ANN in that a filter (neuron)
+        convolves around the input (features) matrix at each layer. These are used almost
+        exclusively for computer vision. There are 2 mains types of layers in the CNN:
+        </p>
+        <ol class="personal-page-list">
+          <li class="">
+            <span>1.</span>
+            <p>
+            <br>
+             <b>Convolutional Layer</b> - This filter is a weight matrix, which is convolving
+             around an input and is multiplied to each patch in the feature matrix, at each
+             stage. At each convolutional layer in the CNN, a filter learns the features
+             from the outputted mapping tensor, by supervised learning methods (as described
+             in the above section) and adapts its weights to make better predictions. Thus
+             at each C-stage, the same features matrix can be inputted multiple times to
+             further train each filter. On each iteration, a new output features matrix is
+             produced. There may be multiple filters working at each layer to produce a
+             different output matrix for different aspects of the initial matrix, this leads
+             to the stacking effect.
+
+            </p>
+          </li>
+          <figure>
+            <img src="img/cnn4.jpg" alt="Convolutional Layer" style="width:600px;height:250px;">
+            <figcaption>This diagram illustrates how the convolutional layer in the neural network works.
+            This image comes from <a href="http://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-tensorflow/">
+            http://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-tensorflow/</a>
+            </figcaption>
+          </figure>
+          <li>
+            <span>2.</span>
+            <p>
+            <br>
+              <b>Pooling Layer</b> - Pooling filters reduce the size of a feature matrix by
+              selecting only the most prominent feature from a patch. In max pooling, where
+              the values in each patch are a set of features determined from the activation
+              functions at some preceding layer in the network, then the max feature is the
+              most detected feature. So only this needs to be passed through to the next
+              layer. This is to make future predictions scale and orientation invariant.
+            </p>
+          </li>
+          <figure>
+            <img src="img/cnn5_mp.jpg" alt="Pooling Layer" style="width:600px;height:260px;">
+            <figcaption>This diagram illustrates how the pooling in the neural network works.
+            This image comes from <a href="http://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-tensorflow/">
+            http://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-tensorflow/</a>
+            </figcaption>
+          </figure>
+          <li>
+            <span>3.</span>
+            <p>
+              <br>
+              <b>Dense Layer</b> - Performs the classification after the final convolutional and pooling layers.
+              <br>
+            </p>
+          </li>
+        </ol>
+          <figure>
+            <img src="img/cnn3.png" alt="Layers in CNN" style="width:600px;height:150px;">
+            <figcaption>This diagram illustrates the throughput of image pixel through filters in a CNN.
+            This image comes from <a href="http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/">
+            http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/</a>
+            </figcaption>
+          </figure>
+      <br>
+      <h4 class="subtitle" id="subsection6">Convolutional Neural Network Implementation</h4>
+        <p>
+          <div class="embed-responsive embed-responsive-16by9" >
+            <iframe class="embed-responsive-item python-notebook" src="./MNIST_CNN.html">
+            </iframe>
+          </div>
+          <br>
+          <sup><a href="#fn11" id="ref11">11</a></sup>
+        </p>
+
+      </div>
+      <br><br>
+      </article>
+      <div id="section3" class="">
+        <h1>Graph Dataflow Model<sup><a href="#fn13" id="ref13">13</a></sup></h1>
+        <hr>
+
+        <p>We are now going to take a step back and, using some of the previous examples
+        and some new ones, analyse the TensorFlow’s graph model.<br></p>
+
+        <h4 class="subtitle" id="subsection8">Storing Data</h4>
+          <p>
+            The following data structures will be important when considering how distributed ML
+            algorithms are implemented.
+          </p>
+          <ul class="personal-page-list">
+            <li>
+              <p>
+              <b>Tensor</b>
+              - In mathematics a tensor is a structure which describes linear relations
+              between vectors and scalar. Similarly in TensorFlow, these represent edges in
+              the graph (as mentioned above) and are implemented as a wrapper for an
+              n-dimensional array.
+              </p>
+            </li>
+            <li>
+              <p>
+              <b>Variables</b>  <span class="glyphicon glyphicon-asterisk" aria-hidden="true"> </span>
+              - A wrappers of persistent tensor which survives each execution of a graph.
+              During gradient descent for example, the full graph is executed many times
+              whilst not maintaining the initial tensors. Here persistence stores are needed
+              to maintain the weights for a layer in a neural network. In a run call,
+              variables are re-assigned to the new value which was calculated for them
+              during the traversal of the graph (consider how the weight matrix is updated
+              during training). These are treated as nodes with the graph.<sup><a href="#fn12" id="ref12">12</a></sup>
+              (http://web.donga.ac.kr/yjko/usefulthings/TensorFlow-Basic-Concept_Ko.pdf)
+              </p>
+            </li>
+            <li>
+              <p>
+              <b>Placeholders</b>
+              - Empty variables which are filled during a graph execution.
+              </p>
+            </li>
+
+            <li>
+              <p>
+              <b>Queues</b>
+              - Different implementations of the standard FIFOQueue optimised for
+              parallel/distributed processing. RandomShuffleQueue can dequeue operations
+              in random order and be written to by multiple threads. These are just like
+              variables in that they are not changed on they persist between sessions and
+              have concurrent FIFO access.
+            </li>
+          </ul>
+        </div>
+        <br>
+
+        <h4 class="subtitle" id="subsection7">Graph Model</h4>
+
+        <p>
+        Computations in TensorFlow are described by a directed graph. When coding we built
+        up this graph up: each node performs a TensorFlow operation and the edges are modelled
+        as tensors/matrices. This is because the data being passed between 2 nodes provides
+        the connection between 2 discrete processes in the algorithm. We can imagine traversing
+        the graph as following the overall flow of data from the inputs to the output of
+        the code. This allows us to build up our machine learning model in smaller
+        discrete parts, making it easier to reason about the stages of a machine learning
+        algorithm as opposed to the details of the implementation.
+        </p>
+        <p>
+        For example, when we write the following code using simple TensorFlow operation:
+        </p>
+        <div align="center">
+          <script src="https://gist.github.com/rajowl/a2e6cc06e2bdca58fc2ebe3d10e76fee.js"></script>
+        </div>
+        <p>
+        which translates to the following graph:
+        </p>
+        <figure>
+          <img src="img/graph2.png" alt="Graph to represent TF code in Gist (above)" style="width:700px;height:200px;">
+          <figcaption>This diagram illustrates how the pooling in the neural network works.
+          This image was produced by me in <a href="https://www.tensorflow.org/programmers_guide/summaries_and_tensorboard">TensorBoard</a>
+          </figcaption>
+        </figure>
+        <p>
+        Similarly, we get the following graph from the ML algorithm above:
+        </p>
+
+        Image of graph
+
+        <p>
+        We can generalise graph formation to the following execution model:
+        <ol class="personal-page-list">
+          <li>
+            <span>1.</span>
+            <p>
+             <b>Sessions</b>
+             - Client programs create a session for each tensor flow graph which is to be computed.
+            </p>
+            <code style="width:40em">
+            ... <br>
+            with tf.Session()/tf.InteractiveSession() as sess: <br>
+            &emsp;&ensp; # running the graph <br>
+            ... <br>
+            </code>
+          </li>
+          <li>
+            <span>2.</span>
+            <p>
+             <b>Extending / Adding</b>
+             - Internally, an extend method is called which allows us to add more nodes and edges
+             to the graph. (Any mathematical operation: lines 5,6,8,9,10,14,15,17)
+            </p>
+          </li>
+          <li>
+            <span>3.</span>
+            <p>
+             <b>Run</b>
+             - The run method takes the set of output names which need to be computed
+             and passes the input tensors into them. This then calculates the transitive closure
+             of the graph to get the outputs. It passes the tensor output values from each node
+             to the next and moves through graph.
+             <br><br>
+             The executions of a TensorFlow graph is lazy in that unless we explicitly run
+             the session, no values are calculated. As we build up the graph, we are merely
+             passing references from sections of the graph to others, by assigning a tensor
+             object the connecting edge.
+            </p>
+            <code style="width:40em">
+              ... <br>
+              with tf.Session()/tf.InteractiveSession() as sess: <br>
+              &emsp;&ensp; ... <br>
+              &emsp;&ensp; sess.run(output_operation) <br>
+              &emsp;&ensp; ... <br>
+            </code>
+          </li>
+        </ol>
+        </p>
+
+      <br><br>
+      <div id="section4" class="">
+        <h1>Distributed Computing in Context<sup><a href="#fn13" id="ref13">13</a></sup></h1>
+        <hr>
+        <p>
+        By popular demand, Google introduce a distributed computing framework to TensorFlow
+        alongside their cloud machine learning tool in early 2016<sup><a href="#fn14" id="ref14">14</a></sup>.
+        This section combines basic ML concepts with the general execution model of a TF
+        graph, to see how TF can scale (machine learning) algorithms to a distributed system.
+        </p>
+
+        <h4 class="subtitle" id="subsection9">Graph Model in Distribution</h4>
+          <p>
+          Nodes can be distributed across the devices being used to compute the graph<sup><a href="#fn16" id="ref16">16</a></sup>.
+          On a single CPU TensorFlow will make use of all cores by multithreading.
+          TensorFlow will map the execution of a node in the graph to a device using a
+          placement algorithm. For this purpose the graph model is particularly advantageous,
+          as by ensuring that each operation is distinct, we can divide stages of an algorithm
+          more clearly. The algorithm applies a greedy heuristic to the placement of nodes
+          on devices by considering whether (1) there exists an implementation of an operations
+          for a device, (2) side of the input and output tensors of the op, (3) expected
+          completion time for the operation on a device and (4) the transmission time of
+          tensors between cross-device nodes. This is a cost model/function; generally we can think
+          of it as holding the input and output tensors for each node and store computation
+          times for the operations at each node given its input tensor for a particular device.<sup><a href="#fn15" id="ref15">15</a></sup>
+
+          </p>
+
+        <h4 class="subtitle" id="subsection10">Master/Worker Model</h4>
+          <p>
+          <a href="https://www.tensorflow.org/deploy/distributed#create_a_cluster">TensorFlow docs</a>
+          define cluster differently to the <a href="./../../index.html#a-class">conventional definition</a>:
+          "a set of tasks that participate in the distributed execution
+          of a TF graph". The graph model enables a convenient implementation of clusters
+          and servers. Clusters can be implemented as a set of nodes, where, by the definition
+          of a TensorFlow node, each node performs a single operation. Since all TensorFlow sessions
+          are multithreaded, all processing is done in parallel.
+          </p>
+
+          <p>
+          The master/worker model in TensorFlow assigns a master, a parameter server, and
+          workers. For a distributed system, the parameter server preserves the mutable shared
+          parameters and workers execute some subgraph of the main graph using data from
+          the parameter server. Each worker is a separate device (for simplicity).
+          Once graph node allocation has occurred, send and/or receive nodes are added
+          to each worker’s subgraph. These enforce a direction to the dataflow between
+          subgraphs to compose the whole graph over the distributed system. The send and
+          receive nodes synchronise data flow between workers<sup><a href="#fn15" id="ref15">15</a></sup>. In this way, only a single
+          call to run the session is needed, in order to pass the input tensors into the
+          input nodes, and the remaining data flow will be  will handled by the workers.
+          This adds to the overall flexibility of this cloud computing platform, alluded
+          to in the introduction section, as even by adding more devices/workers to the
+          system, TensorFlow will automatically handle node allocation and the initialisation
+          of send and receive nodes. When scaled, communication between workers may be
+          handled by TCP.
+          </p>
+
+          <p>
+          <figure>
+            <img src="img/master_worker.png" alt="Layers in CNN" style="width:600px;height:250px;">
+            <figcaption>This diagram illustrates the positioning of nodes in a distributed system
+            and how TensorFlow's master/worker model handles the execution of the graph.
+             Taken from <a href="http://download.tensorflow.org/paper/whitepaper2015.pdf">
+            (Abadi et al., 2015)</a> <sup><a href="#fn13" id="ref13">13</a></sup>.
+            </figcaption>
+          </figure>
+          </p>
+
+        <h4 class="subtitle" id="subsection10">Distributed Data Storage Structures</h4>
+          <p>
+          Variables update their values at the end of each execution of
+          the graph (mutable). These are a global data store and can be accessed by different sessions
+          running their own version of the graph. These are held in the parameter server.
+          In this way, data can persist across multiple devices or threads.
+          </p>
+          <p>
+          Queues can be used as opposed to the feed-dict parameter to the run function. Queues have thread-safe
+          implementations<sup><a href="#fn17" id="ref17">17</a></sup>.
+          All TensorFlow session are multithreaded, so devices can enqueue randomised examples in parallel (input-output sets)
+          that can be learned from. A training thread can dequeue and execute in mini-batches,
+          akin to the diagram below, the algorithm can iterate in this way to learn.
+          A thread might apply a pre-processing function and enqueues the image, a training
+          thread can dequeue and learns the images.
+          </p>
+
+          <figure>
+            <img src="img/file_queues.gif" alt="Layers in CNN" style="width:600px;height:150px;">
+            <figcaption>This diagram illustrates usage of a TensorFlow queue for ML, as described
+            above, for the CIFAR dataset. This image comes from
+             <a href="http://adventuresinmachinelearning.com/introduction-tensorflow-queuing/">
+            http://adventuresinmachinelearning.com/introduction-tensorflow-queuing/</a>
+            </figcaption>
+          </figure>
+
+          <p>
+          There are 2 main fault tolerance mechanisms in TensorFlow:
+          <ol class="personal-page-list">
+          <li>
+            <span>1.</span>
+            <p>
+            As is the case with MapReduce, TF may choose restart the execution of a graph.
+            </p>
+          </li>
+          <li>
+            <span>2.</span>
+            <p>
+             The checkpoint feature is also available. Each variable will store its data
+             incrementally on a save node. The system can be restarted from the previously
+             checkpointed state. This is akin to the checkpointing API in Apache Spark.
+            </p>
+          </li>
+          </ol>
+        <h4 class="subtitle" id="subsection14">Implementation</h4>
+        <p>
+        By making use of distributed learning for a deep learning algorithm, we should be
+        able to train the same model faster. Distribution can be achieved by leveraging devices
+        on the same machine or on a cluster, which may be accessed through a cloud platform
+        (i.e. <a href="https://cloud.google.com">Google's Cloud Platform</a> or <a href="https://aws.amazon.com">AWS</a>).
+        </p>
+        <p>
+        Below I have extended the MNIST ML example. Much of the code is the same as the
+        previous version, but minor changes have been made to make the code distributed.
+        </p>
+          <div align="center">
+          <script align="center" src="https://gist.github.com/rajowl/c07ebbdd84cf0562695b9f90600ec634.js"></script>
+          </div>
+        <h4 class="subtitle" id="subsection12">Use Cases</h4>
+        TensorFlow has become very popular over the short time it has been available as an open source tool.
+        Here are some important cases where it is being used:
+        <br><br>
+        <div class="container">
+         <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="https://www.pcworld.com/article/3072256/google-io/googles-tensor-processing-unit-said-to-advance-moores-law-seven-years-into-the-future.html">
+        <img src="./img/TPU.jpg" alt="Tensor Processing Unit" style="width:100%">
+        </a>
+        <div class="caption">
+          <p><a href="http://learningsys.org/nips17/assets/slides/dean-nips17.pdf">Google's TPU</a>.
+            Chips ere developed specifically by Google for running distributed TensorFlow
+          code over their Cloud Platform. Said to perform at 45 TFLOPS with increased
+          bandwidth to 600GB/s. Google claims these chips were used to run TensorFlow with
+          MapReduce in the AlphaGo vs Lee Sedol match.
+          </p>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="https://research.googleblog.com/2015/11/computer-respond-to-this-email.html">
+        <img src="./img/summarytext.png" alt="Text Summarisation" style="width:100%">
+        </a>
+        <div class="caption">
+          <p>Used widely for text NLP, most prominently in Google Translate. It has also been
+          used to provide article summarisation on Android phone and for snippet summaries
+          on Google Search.
+          </p>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="https://www.bloomberg.com/news/articles/2015-10-26/google-turning-its-lucrative-web-search-over-to-ai-machines">
+        <img class="img-fluid" src="./img/rankbrain.jpg"
+        alt="Rankbrain" style="width:100%">
+        <div class="caption">
+      </a>
+        <p> This is being used in Google Search to provide better query results. It is aimed
+        to learn more about why people search for certain things and use this to predict
+        future search conclusions.
+        Image taken from <a href="https://montfort.io/google-rank-brain-what-is-it-and-how-will-it-affect-seo/">here</a>.
+        </p>
+    </div>
+  </div>
+  </div>
+<!--/div>
+</div>
+
+      </div>
+      </div>
+    </div>
+   </div-->
+
+  <div class="refs">
+ <hr>
+    <p id="fn1">1. <a href="https://www.youtube.com/watch?v=oZikw5k_2FM">TensorFlow Open Source Machine Learning</a> [Video]<a href="#ref1" title="Jump back to footnote 1
+      in the text.">↩</a></p>
+   <p id="fn2"><br>2. Dean J et al n.d. <a href="https://static.googleusercontent.com/media/research.google.com/en//archive/large_deep_networks_nips2012.pdf">
+     <i>Large-Scale Distributed Deep Networks</i></a><a href="#ref2" title="Jump back to footnote 2 in the text.">↩</a></p>
+   <p id="fn3"><br>3. Metz C. (2015)<a href"https://www.wired.com/2015/11/google-open-sources-its-artificial-intelligence-engine/">Google Just Open Sourced TensorFlow, Its Artificial Intelligence Engine</a></a>
+     <i> 9th USENIX Symposium on Networked Systems Design and Implementation</i>, Berkeley,
+     USENIX Association.<a href="#ref3" title="Jump back to footnote 3 in the text.">↩</a></p>
+   <p id="fn4"><br>4. Hope T et al. (2017) <i>Learning TensorFlow: A Guide to Building Deep Learning Systems (pg 6)</i><a href="#ref4" title="Jump back to footnote 4 in the text.">↩</a></p>
+   <p id="fn5"><br>5. Russell S (2009) <i>Artificial Intelligence: A Modern Approach (3rd edition)</i> <a href="#ref5" title="Jump back to footnote 5 in the text.">↩</a></p>
+   <p id="fn6"><br>6. Baxter J (2000) <i>A Model of Inductive Bias Learning</i><a href="#ref6" title="Jump back to footnote 6 in the text.">↩</a></p>
+   <p id="fn7"<br>7. Herrera F et al (2016) <i>Multilabel classification: Problem Analysis, Metrics and Techniques<i>
+   <a href="#ref7" title="Jump back to footnote 7 in the text.">↩</a></p>
+   <p id="fn8"><br>8. Zisserman A (2015) <i>Lecture 2: The SVM Classifier</i> [Lecture], C19 Machine Learning</i><a href="#ref8" title="Jump back to footnote 8 in the text.">↩</a></p>
+   <p id="fn9"><br>9. Van Der Smagt P (1996) <i>An Introduction to Neural Networks</i><a href="#ref9" title="Jump back to footnote 9 in the text.">↩</a></p>
+   <p id="fn10"><br>10. <a href"https://deeplearning4j.org/neuralnet-overview">An Introduction to Deep Neural Netwroks (Deep Learning)
+   <a href="#ref10" title="Jump back to footnote 10 in the text.">↩</a></p>
+   <p id="fn11"><br>11. <a href="http://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-tensorflow/">Adventures In Machine Learning
+   <a href="#ref11" title="Jump back to footnote 11 in the text.">↩</a></p>
+   </a>
+   <p id="fn12"><br>12. Youngjoong K n.d. <i>Introduction of TensorFlow</i> [Lecture]
+   <a href="#ref12" title="Jump back to footnote 12 in the text.">↩</a></p>
+   </a>
+  <p id="fn13"><br>13. Abadi M et al (2015) <i>TensorFlow: Large-Scale Machine Learning on Heterogenous Distributed Systems</i><a href="#ref13" title="Jump back to footnote 13 in the text.">↩</a></p>
+  <p id="fn14"><br>14. <a href="https://research.googleblog.com/2016/04/announcing-tensorflow-08-now-with.html">Google's Research Blog</a><a href="#ref14" title="Jump back to footnote 14 in the text.">↩</a></p>
+  <p id="fn15"><br>15. Goldsborough P (2016) <a href="https://arxiv.org/pdf/1610.01178.pdf"><i>A Tour of TensorFlow</i></a><a href="#ref15" title="Jump back to footnote 15 in the text.">↩</a></p>
+  <p id="fn16"><br>16. <a href="http://amid.fish/distributed-tensorflow-a-gentle-introduction">Distributed TensorFlow: A Gentle Introduction</a> (2017)<a href="#ref16" title="Jump back to footnote 16 in the text.">↩</a></p>
+  <p id="fn17"><br>17. Huyen C (2018)<i>TensorFlow Input Pipeline<i> [Lecture]<a href="https://web.stanford.edu/class/cs20si/2017/lectures/slides_09.pdf" 
+  title="Jump back to footnote 17 in the text.">↩</a></p>
+  <p id="fn18"><br>18. <a href="https://cambridgespark.com/content/tutorials/deep-learning-for-complete-beginners-recognising-handwritten-digits/index.html" title="">Deep learning for complete beginners</a></p>
+  <p id="fn19"><br>19. <a href="https://www.coursera.org/learn/convolutional-neural-networks/lecture/hELHk/pooling-layers" title="">Coursera - Convolutional Neural Networks</a></p>
+  <p id="fn20"><br>20. <a href="https://www.doitpoms.ac.uk/tlplib/tensors/what_is_tensor.php" title="">What is a tensor?</a></p>
+  <p id="fn21"><br>21. <a href="https://www.tensorflow.org/versions/r1.1/programmers_guide/threading_and_queues" title="">TensorFlow Documentation - Threading and Queues =</a></p>
+  <br><br>
+  </div>
+  </div>
+  </div>
+</div>
+</section>
+
+
+
+    <section class="" id="footer" style="background-color:#F38945; color:rgba(255, 255, 255, 0.7); box-shadow: 0px 2px 10px 5px rgba(100, 100, 100, 0.49);">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <p class="" style="color: #fff">Contributors</p>
+            <hr style="border-top: 1px solid #4B4135; border-width: 3px;">
+            <div class="footer-text">
+            	Rajat Rasal <br>
+            	Rasika Navarange <br>
+            	Giovanni Caruso <br>
+            	Pamelpreet Jhinger <br>
+            </div>
+          </div>
+          <div class="col-sm">
+            <p class="" style="color: #fff">Templates</p>
+            <hr style="border-top: 1px solid #4B4135; border-width: 3px;">
+            <div class="footer-text">
+              <a href="https://github.com/BlackrockDigital/startbootstrap-creative"
+              style="color:rgba(255, 255, 255, 0.7);">
+              <i class="fab fa-2x fa-github"></i><br>
+              startbootstrap-creative
+              </a><br>
+              altered by Rajat Rasal
+            <div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script-->
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="../../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <!-- Custom scripts for this template -->
+    <!-- script src="js/creative.min.js"></script-->
+    <script src="../../js/creative.js"></script>
+    <script src="../../js/personal_page_scripts.js"></script>
+
+  </body>
+
+</html>
